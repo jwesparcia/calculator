@@ -1,36 +1,42 @@
-.main-container{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  height: 400px;
-  width: 20%;
-  margin: 200px auto;
-  gap: 10px;
-  background-color: rgba(163, 163, 163, 0.603);
-  padding: 50px 20px;
-  border-radius: 10px;
-}
-.output{
-  border: 1px solid black;
-  grid-column: span 4;
-  margin-bottom: 20px;
+.main{
   display: flex;
-  font-size: larger;
-  padding-left: 10px;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
 }
-.equal{
-  grid-column: span 4;
-  grid-row: span 2;
-  background-color: green;
+.parent{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+  height: 450px;  
+  border: 1px solid black;
+  padding: 50px;
+  border-radius: 10px;
+  width: 26%;
+  background-color: rgba(159, 189, 235, 0.644);
 }
 button{
-  font-size: larger;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border: none;
-  cursor: pointer;
+  width: 100%;
+  font-size: x-large;
+  color: rgb(60, 101, 214);
+  font-weight: bolder;
 }
-.operator{
-  background-color: gold;
+
+input{
+  grid-column: 1/6;
+  text-align: right;
+  font-size: x-large;
+  padding-right: 10px;
 }
-.c{
+
+.equal{
+  grid-column: 5/6;
+  grid-row: 4/6;
+  background-color: blue;
+  color: white;
+}
+
+.C{
   background-color: red;
+  color: white;
 }
